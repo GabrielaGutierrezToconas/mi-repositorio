@@ -1,0 +1,462 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+.grilla{
+    background-image: linear-gradient(to left top, #ac340a, #be5400, #cc7200, #d79100, #dfb000, #dbc000, #d4d007, #cbe01c, #b7e523, #a1e92f, #88ed3c, #68f04b);
+    border: 3px solid black;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 3fr;
+}
+
+.logo{
+    width: 18%;
+    border-radius: 50%;
+    transform: translate(30%,3%);
+}
+
+.header{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background-color:#0c0c0cf3;
+    position: sticky;
+    top:0;
+}
+
+.menu{
+    display: flex;
+    gap: 10%;
+    width: 65%;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+}
+.menu a:hover{
+    transform: scale(1.3);
+    border-radius: 6%;
+}
+
+.perros{
+    border: 3px solid blue;
+    height: 25%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: main;
+}
+
+.reseña{
+    border: 3px solid rgb(231, 55, 84);
+    height: 36%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.reseña__hist{
+    border: 3px solid rgb(205, 231, 55);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grilla__reseña{
+    border: 3px solid rgb(152, 55, 231);
+    height: 90%;
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,30%);
+    column-gap: 1.2rem;
+    padding: 2%;
+}
+
+.texto__foto1{
+    display:flex;
+}
+.texto__foto2{
+    display:flex;
+    flex-direction: column;
+}
+.foto1, .foto2{
+    border-radius: 30%;
+}
+
+.caracteristicas{
+    border: 3px solid rgb(96, 231, 55);
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.tipos{
+    border: 3px solid rgb(241, 120, 39);
+    height: 18%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.lista{
+    border: 3px solid rgb(7, 110, 7);
+    list-style: none;
+}
+
+.lista, .tipos__img{
+    width: 80%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.div__img{
+    border-radius: 10%;
+}
+
+.pie{
+    border: 3px solid rgb(110, 7, 70);
+    grid-area: footer;
+}
+
+.redes{
+    border: 3px solid rgb(66, 163, 228);
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+
+
+.grillaSalud{
+    background-image: linear-gradient(to left top, #ac340a, #be5400, #cc7200, #d79100, #dfb000, #dbc000, #d4d007, #cbe01c, #b7e523, #a1e92f, #88ed3c, #68f04b);
+    border: 3px solid black;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+    grid-template-rows: 4fr;
+}
+
+.grilla__salud{
+    border: 3px solid rgb(31, 20, 177);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    grid-area: main;
+}
+.alimentacion, .pelaje, .vet{
+    border: 3px solid rgb(177, 20, 125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alimentacion__edades{
+    border: 3px solid rgb(4, 92, 23);
+    display: flex;
+    padding: 1%;
+}
+
+.fotosAlimentacion{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 5%;
+}
+
+.fotosAlimentacion img{
+    border-radius: 30%;
+}
+
+.pasosAseo{
+    border: 3px solid rgb(214, 230, 217);
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pasosAseo img{
+    border-radius: 30%;
+}
+
+.productos{
+    border: 3px solid rgb(214, 230, 217);
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listaProductos{
+    border: 3px solid rgba(214, 230, 217, 0.363);
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+.listaProductos ul li{
+    list-style: none;
+}
+
+.pie{
+    grid-area: footer;
+}
+
+
+
+
+.grillaGaleria{
+    background-image: linear-gradient(to left top, #ac340a, #be5400, #cc7200, #d79100, #dfb000, #dbc000, #d4d007, #cbe01c, #b7e523, #a1e92f, #88ed3c, #68f04b);
+    border: 3px solid black;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 3fr;
+}
+
+.galeria{
+    border: 3px solid rgb(16, 185, 38);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(8,11%);
+    justify-content: center;
+    padding: 1.5%;
+    gap: 0.3%;
+}
+
+.galeriaImg{
+    width: 100%;
+    height: 100%;
+    /*esta propiedad sirve para que la imagen no se distorcione con respecto a su ancho*/
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+.galeria__div1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+.galeria__div2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.galeria__div3{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+.galeria__div5{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+.galeria__div6{
+    grid-column: 3 / 5;
+    grid-row: 4 / 6;
+}
+.galeria__div7{
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+.galeria__div8{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+.galeria__div9{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.galeria__div10{
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+}
+.galeria__div11{
+    grid-column: 3 / 4;
+    grid-row: 8 / 9;
+}
+.galeria__div12{
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+}
+.galeria__div13{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.galeria__div14{
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+}
+.galeria__div15{
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+.galeria__div16{
+    grid-column: 2 / 3;
+    grid-row: 7 / 9;
+}
+.galeria__div17{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+.galeria__div18{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+.galeria__div19{
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+}
+.galeria__div20{
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+}
+.galeria__div21{
+    grid-column: 4 / 5;
+    grid-row: 6 / 9;
+}
+
+
+
+
+
+.grillaDatosCuriosos{
+    background-image: linear-gradient(to left top, #ac340a, #be5400, #cc7200, #d79100, #dfb000, #dbc000, #d4d007, #cbe01c, #b7e523, #a1e92f, #88ed3c, #68f04b);
+    border: 3px solid black;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 3fr;
+}
+.estilosSabiasQue{
+    border: 3px solid rgb(158, 16, 16);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    grid-area: main;
+}
+.tituloSabiasQue{
+    border: 3px solid rgb(66, 16, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.diaFestejo, .tituloPeliculas{
+    border: 3px solid rgb(158, 16, 59);
+    display: flex;
+    width: 70%;
+    padding: 1%;
+}
+.walsh{
+    height: 40%;
+    width: 25%;
+    object-fit: cover;
+}
+.slinky{
+    width: 50%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.buster,.weenie,.buddy{
+    width: 80%;
+    height: 70%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.peliculas{
+    border: 3px solid rgb(22, 150, 54);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.listaPeliculas, .listaPeliculas2{
+    width: 50%;
+    padding: 1%;
+    /*display: inline-flex;
+    justify-content: center;*/
+}
+.estilo__lista{
+    list-style: none;
+}
+
+.estiloSalchiencuentro{
+    grid-area: main;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+
+
+
+.grillaContactos{
+    background-image: linear-gradient(to left top, #ac340a, #be5400, #cc7200, #d79100, #dfb000, #dbc000, #d4d007, #cbe01c, #b7e523, #a1e92f, #88ed3c, #68f04b);
+    border: 3px solid black;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 3fr;
+}
+.sectionformulario{
+    border: 3px solid rgb(24, 97, 119);
+    grid-area: main;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.form{
+    border: 3px solid rgb(150, 22, 82);
+    background-image: url(../assets/huellas.png);
+    background-color: rgba(240, 233, 233, 0.158);
+}

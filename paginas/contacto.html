@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salchidog</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="grillaContactos">
+        <header class="header">
+            <a href="../index.html">
+                <img class="logo" src="../assets/logo.png" alt="logo">
+            </a>
+            <nav class="menu">
+                <a href="../index.html">INICIO</a>
+                <a href="./salud.html">SALUD</a>
+                <a href="./galeria.html">GALERIA</a>
+                <a href="./datoscuriosos.html">DATOS CURIOSOS</a>
+                <a href="./contacto.html">CONTACTO</a>
+        </header>
+        <main>
+            <section class="sectionformulario">
+                <form class="form" action="" method="post" enctype="multipart/form">
+                    <div>
+                        <div>
+                            <input type="text" placeholder="Ingrese su Nombre">
+                            <input type="text" placeholder="Ingrese su Apellido">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="email" placeholder="Ingrese su Mail">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="password" placeholder="Ingrese su Contraseña">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Tipo">Elija su tipo de Dachshund</label>
+                            <select name="Tipo">
+                                <option value="Estandar">Estándar</option>
+                                <option value="Mini">Miniatura</option>
+                                <option value="Kaninchen">Kaninchen</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <legend>Escriba su consulta</legend>
+                            <textarea name="comentario" id="comentario" cols="50" rows="10">Consulta</textarea>
+                        </div>
+                        <div>
+                            <label for="">Acepto recibir notificaciones</label>
+                            <input type="checkbox" value="yes" name="acepta">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="reset" value="Limpiar">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="pie"> <!--Empieza el footer con redes sociales-->
+            <div class="redes">
+                <a class="fb" href="facebook.com"><i class="bi bi-facebook"></i></a><a  class="youtube" href="youtube.com"><i class="bi bi-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
