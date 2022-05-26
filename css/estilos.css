@@ -467,5 +467,5 @@ input{
     transition: all 3s;
 }
 input:focus{
-    width: 45%;
+    width: 44%;
 }
