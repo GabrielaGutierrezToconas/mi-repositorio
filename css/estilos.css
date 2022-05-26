@@ -460,3 +460,12 @@ body{
     background-image: url(../assets/huellas.png);
     background-color: rgba(240, 233, 233, 0.158);
 }
+
+input{
+    width: 37%;
+    height: 5%;
+    transition: all 3s;
+}
+input:focus{
+    width: 45%;
+}
